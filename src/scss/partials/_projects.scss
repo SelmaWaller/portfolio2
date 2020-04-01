@@ -1,0 +1,42 @@
+.projects {
+  display: flex;
+  margin-bottom: 50px;
+
+  img {
+    box-shadow: -2px 2px 20px #7777771c;
+    width: 100%;
+    max-width: 600px;
+    transition: 200ms ease-in;
+
+    &:hover {
+      transform: translateY(-2px);
+      transition: 200ms ease-out;
+      box-shadow: -2px 2px 20px #7777772a;
+    }
+  }
+
+  .projectDetails {
+    width: 100%;
+    max-width: 350px;
+    padding-left: 25px;
+    color: $theme-black;
+
+    h3 {
+      font-family: 'EB Garmond', serif;
+      font-weight: normal;
+      @include calcRem(24);
+      margin: 0 0 10px;
+    }
+
+    p {
+      font-family: 'EB Garmond', serif;
+      font-weight: normal;
+      margin: 10px 0;
+      @include calcRem(18);
+
+      &:nth-child(5) {
+        margin-top: 30px;
+      }
+    }
+  }
+}

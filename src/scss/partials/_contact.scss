@@ -1,0 +1,79 @@
+.contact {
+  max-width: 550px;
+  position: relative;
+
+  p {
+    margin-bottom: 5px;
+  }
+  label {
+    @include calcRem(20);
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    span {
+      margin-top: 3px;
+      padding-left: 5px;
+      position: absolute;
+      color: $theme-error;
+      @include calcRem(17);
+    }
+  }
+
+  input,
+  textarea {
+    resize: none;
+    overflow: auto;
+    width: 100%;
+    font-family: 'EB Garamond', serif;
+    @include calcRem(17);
+    padding: 5px 5px 0;
+    border: 1px solid rgba($theme-black, 0.4);
+  }
+
+  textarea {
+    min-height: 150px;
+  }
+
+  .submitButton {
+    border: none;
+    padding: 5px 10px;
+    color: $theme-white;
+    background: rgba($theme-black, 0.83);
+    font-family: 'EB Garamond', serif;
+    @include calcRem(20);
+    margin: 15px -10px 20px 0;
+    position: absolute;
+    right: 0;
+    transition: 200ms ease;
+
+    &:disabled {
+      background: rgba($theme-black, 0.63);
+
+      &:hover {
+        padding: 5px 10px;
+      }
+
+      &:hover span::after {
+        opacity: 0;
+      }
+    }
+
+    &:hover {
+      transition: 200ms ease;
+      padding: 5px 25px 5px 10px;
+    }
+
+    span::after {
+      opacity: 0;
+      content: '\00bb';
+      position: absolute;
+      right: 8px;
+      top: 3px;
+      transition: 200ms ease;
+    }
+
+    &:hover span::after {
+      opacity: 1;
+      transition: 200ms ease;
+    }
+  }
+}

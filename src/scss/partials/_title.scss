@@ -1,0 +1,21 @@
+.pageTitle {
+  width: 400px;
+  color: $theme-white;
+  margin-left: 55%;
+  padding: 0 20px;
+  margin-bottom: 110px;
+
+  h1 {
+    @include calcRem(60);
+    font-weight: 100;
+    margin-bottom: 0;
+    animation: intro-content 1.5s;
+  }
+
+  h2 {
+    max-width: 250px;
+    margin-top: -5px;
+    font-weight: 200;
+    animation: intro-subheader 2s;
+  }
+}

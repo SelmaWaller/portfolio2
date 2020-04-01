@@ -1,0 +1,33 @@
+.navigation {
+  margin: 20px;
+
+  ul {
+    display: flex;
+    li {
+      img {
+        width: 40px;
+      }
+      margin: 0 25px;
+      position: relative;
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+      &:hover .navLine {
+        width: 100%;
+        transition: 200ms ease-out;
+      }
+    }
+  }
+  a {
+    @include calcRem(24);
+    font-weight: 200;
+    color: $theme-white;
+  }
+
+  .navLine {
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: white;
+  }
+}
