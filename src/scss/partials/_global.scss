@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@200;300;400;500&family=Poppins:wght@100;200;300&display=swap');
 
+::selection {
+  background: $theme-selection;
+}
+
+::-moz-selection {
+  background: $theme-selection;
+}
+
 body {
-  background-image: url('./../../images/background.png');
+  background-image: url('./../../images/background-shorter.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: left -1px;
@@ -30,10 +38,11 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 
 .content {
+  padding: 0 20px;
   animation: intro-content 1s;
 }

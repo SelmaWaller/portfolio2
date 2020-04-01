@@ -1,4 +1,15 @@
 .footer {
   margin-top: 100px;
   text-align: center;
+
+  img {
+    padding: 0 10px;
+    width: 100%;
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
 }

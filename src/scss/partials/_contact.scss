@@ -2,13 +2,23 @@
   max-width: 550px;
   position: relative;
 
-  p {
-    margin-bottom: 5px;
+  .disableForm {
+    opacity: 0.5;
+    input,
+    textarea {
+      cursor: default;
+    }
   }
+
+  p {
+    margin: 15px 0 5px;
+  }
+
   label {
-    @include calcRem(20);
+    @include calcRem(19);
     font-family: 'EB Garamond', serif;
     font-weight: 500;
+
     span {
       margin-top: 3px;
       padding-left: 5px;
@@ -18,62 +28,123 @@
     }
   }
 
+  .required {
+    @include calcRem(20);
+    font-weight: normal;
+    position: absolute;
+    margin: -2px 0 0 -4px;
+    color: $theme-error;
+    animation: cardGradient 5s infinite;
+  }
+
+  .error {
+    @include calcRem(18);
+    margin: 0;
+    padding-left: 13px;
+    font-weight: normal;
+    color: $theme-error;
+
+    &__hide {
+      display: none;
+    }
+  }
+
   input,
   textarea {
+    background: rgba($theme-white, 0.85);
     resize: none;
     overflow: auto;
     width: 100%;
     font-family: 'EB Garamond', serif;
-    @include calcRem(17);
+    @include calcRem(19);
     padding: 5px 5px 0;
     border: 1px solid rgba($theme-black, 0.4);
+
+    &::placeholder,
+    &::-webkit-input-placeholder,
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      @include calcRem(19);
+      font-family: 'EB Garamond', serif;
+      box-shadow: inset 0 0 0 30px $theme-white;
+      -webkit-box-shadow: inset 0 0 0 30px $theme-white !important;
+    }
+
+    &:focus {
+      outline: 0 !important;
+      -webkit-appearance: none;
+    }
   }
 
   textarea {
     min-height: 150px;
   }
 
-  .submitButton {
-    border: none;
-    padding: 5px 10px;
-    color: $theme-white;
-    background: rgba($theme-black, 0.83);
-    font-family: 'EB Garamond', serif;
-    @include calcRem(20);
-    margin: 15px -10px 20px 0;
-    position: absolute;
-    right: 0;
-    transition: 200ms ease;
+  .submittedForm {
+    display: flex;
 
-    &:disabled {
-      background: rgba($theme-black, 0.63);
+    .submitButton {
+      border: none;
+      padding: 5px 10px;
+      color: $theme-white;
+      background: rgba($theme-black, 0.83);
+      font-family: 'EB Garamond', serif;
+      @include calcRem(19);
+      margin-top: 10px;
+      transition: 200ms ease;
+      cursor: pointer;
+      position: relative;
+
+      &:disabled {
+        cursor: not-allowed;
+        background: rgba($theme-black, 0.6);
+
+        &:hover {
+          padding: 5px 10px;
+        }
+
+        &:hover span::after {
+          opacity: 0;
+        }
+      }
 
       &:hover {
-        padding: 5px 10px;
+        transition: 200ms ease;
+        padding: 5px 25px 5px 10px;
+      }
+
+      span::after {
+        opacity: 0;
+        color: $theme-white;
+        content: '\00bb';
+        position: absolute;
+        right: 8px;
+        top: 3px;
+        transition: 200ms ease;
       }
 
       &:hover span::after {
-        opacity: 0;
+        opacity: 1;
+        transition: 200ms ease;
       }
     }
 
-    &:hover {
-      transition: 200ms ease;
-      padding: 5px 25px 5px 10px;
-    }
+    .messageSent {
+      input {
+        @include calcRem(20);
+        background: rgba($theme-white, 0.5);
+        border: none;
+        margin-left: 20px;
+        padding: 7px 0 0;
+        animation: intro-content 300ms ease;
+        cursor: default;
+      }
 
-    span::after {
-      opacity: 0;
-      content: '\00bb';
-      position: absolute;
-      right: 8px;
-      top: 3px;
-      transition: 200ms ease;
-    }
-
-    &:hover span::after {
-      opacity: 1;
-      transition: 200ms ease;
+      &__hide {
+        display: none;
+      }
     }
   }
 }
