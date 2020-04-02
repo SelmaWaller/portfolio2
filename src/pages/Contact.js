@@ -57,7 +57,7 @@ export default function Contact() {
     <>
       <ContentWave
         header={'contact'}
-        subheader={'connected to your default email client'}
+        subheader={'feel free to contact me at anytime'}
       />
       <div className="content">
         <div className="title">
@@ -71,7 +71,7 @@ export default function Contact() {
                   Name<span className="required">* </span>
                   <span className={nameError ? 'error' : 'error__hide'}>
                     {' '}
-                    Please enter your name. Full surname is not required
+                    Please enter your name
                   </span>
                 </label>
               </p>
@@ -155,7 +155,7 @@ export default function Contact() {
                   nameError || emailError || messageError || showResponse
                 }
               >
-                <span>Save</span>
+                <span>Send in email client</span>
               </button>
               <div
                 className={showResponse ? 'messageSent' : 'messageSent__hide'}
@@ -163,7 +163,7 @@ export default function Contact() {
                 <input
                   readOnly
                   type="text"
-                  value="Please wait for email client"
+                  value="Please wait for client to open"
                 />
               </div>
             </div>
