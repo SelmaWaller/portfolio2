@@ -15,7 +15,7 @@ export default function Contact() {
   let handleChange = input => {
     let name = input.target.name;
     let value = input.target.value;
-    let namePattern = /^[a-zA-ZæøåÆØÅ -]{1,}[ ]{1}[a-zA-ZæøåÆØÅ. -]{1,}$/;
+    let namePattern = /^[a-zA-ZæøåÆØÅ -]+$/;
     let emailPattern = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
     let subjectPattern = /^(.{1,})$/;
     let messagePattern = /^(.{15,})$/;
