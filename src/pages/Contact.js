@@ -7,6 +7,7 @@ const minMessageCount = 15;
 export default function Contact() {
   const [nameError, setNameError] = useState(true);
   const [emailError, setEmailError] = useState(true);
+  const [subjectError, setSubjectError] = useState(true);
   const [messageError, setMessageError] = useState(true);
   const [showResponse, setShowResponse] = useState(false);
   const [count, setCount] = useState(minMessageCount);
@@ -16,6 +17,7 @@ export default function Contact() {
     let value = input.target.value;
     let namePattern = /^[a-zA-ZæøåÆØÅ -]{1,}[ ]{1}[a-zA-ZæøåÆØÅ. -]{1,}$/;
     let emailPattern = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
+    let subjectPattern = /^(.{1,})$/;
     let messagePattern = /^(.{15,})$/;
 
     switch (name) {
@@ -24,6 +26,11 @@ export default function Contact() {
         break;
       case 'email':
         emailPattern.test(value) ? setEmailError(false) : setEmailError(true);
+        break;
+      case 'subject':
+        subjectPattern.test(value)
+          ? setSubjectError(false)
+          : setSubjectError(true);
         break;
       case 'message':
         setCount(minMessageCount - value.length);
@@ -34,20 +41,23 @@ export default function Contact() {
     }
   };
 
-  let filterPhone = input => {
-    input.target.value = input.target.value.replace(/[^\d]/, '');
-  };
-
   let submitForm = event => {
     event.preventDefault();
     setShowResponse(true);
+    let subject = document.querySelector('#subject').value;
+    let contactName = document.querySelector('#name').value;
+    let contactEmail = document.querySelector('#email').value;
+    let contactPhone = document.querySelector('#phone').value;
+    let contactMessage = document.querySelector('#message').value;
+    let body = `Name: ${contactName}, Email: ${contactEmail}, Phone: ${contactPhone}, Message: ${contactMessage}`;
+    window.open(`mailto:selmawaller@gmail.com?subject=${subject}&body=${body}`);
   };
 
   return (
     <>
       <ContentWave
         header={'contact'}
-        subheader={'feel free to contact me at anytime!'}
+        subheader={'connected to your default email client'}
       />
       <div className="content">
         <div className="title">
@@ -95,10 +105,27 @@ export default function Contact() {
                 <label htmlFor="phone">Phone</label>
               </p>
               <input
-                onChange={filterPhone}
+                onChange={handleChange}
                 id="phone"
                 type="text"
                 name="phone"
+                readOnly={showResponse ? true : false}
+              />
+
+              <p>
+                <label htmlFor="subject">
+                  Subject<span className="required">* </span>
+                  <span className={subjectError ? 'error' : 'error__hide'}>
+                    {' '}
+                    Subject can't be empty
+                  </span>
+                </label>
+              </p>
+              <input
+                onChange={handleChange}
+                id="subject"
+                type="text"
+                name="subject"
                 readOnly={showResponse ? true : false}
               />
 
@@ -128,7 +155,7 @@ export default function Contact() {
                   nameError || emailError || messageError || showResponse
                 }
               >
-                <span>Send</span>
+                <span>Save</span>
               </button>
               <div
                 className={showResponse ? 'messageSent' : 'messageSent__hide'}
@@ -136,7 +163,7 @@ export default function Contact() {
                 <input
                   readOnly
                   type="text"
-                  value="Message sent successfully!"
+                  value="Please wait for email client"
                 />
               </div>
             </div>
