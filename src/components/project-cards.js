@@ -1,19 +1,20 @@
 import React from 'react';
 
 const ProjectCards = ({
-  gitrepo,
+  netlify,
   image,
   name,
   published,
   tools,
   type,
   description,
+  gitrepo,
 }) => {
   return (
     <>
       <div className="projects">
-        <a href={gitrepo}>
-          <img src={image} alt={name} title="Inspect repo in github" />
+        <a href={netlify}>
+          <img src={image} alt={name} title="Netlify preview" />
         </a>
         <div className="projectDetails">
           <h3>{name}</h3>
@@ -21,6 +22,12 @@ const ProjectCards = ({
           <p>{tools}</p>
           <p>{type}</p>
           <p>{description}</p>
+          <div className="gitLink">
+            <p>
+              <a href={gitrepo}>Link to repo</a>
+            </p>
+            <div className="linkLine"></div>
+          </div>
         </div>
       </div>
     </>

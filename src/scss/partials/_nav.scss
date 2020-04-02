@@ -4,8 +4,10 @@
   ul {
     display: flex;
     li {
+      transition: 200ms;
       img {
         width: 40px;
+        transition: 200ms;
       }
       margin: 0 25px;
       position: relative;

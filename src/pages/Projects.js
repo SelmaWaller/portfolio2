@@ -18,13 +18,14 @@ function Projects() {
           return (
             <ProjectCards
               key={index}
-              gitrepo={value.gitrepo}
+              netlify={value.netlify}
               image={value.image}
               name={value.name}
               published={value.published}
               tools={value.tools}
               type={value.type}
               description={value.description}
+              gitrepo={value.gitrepo}
             />
           );
         })}
