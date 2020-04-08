@@ -1,5 +1,5 @@
 .contact {
-  max-width: 550px;
+  max-width: 600px;
   position: relative;
 
   .disableForm {
@@ -16,7 +16,7 @@
 
   label {
     @include calcRem(19);
-    font-family: 'EB Garamond', serif;
+    font-family: "EB Garamond", serif;
     font-weight: 500;
 
     span {
@@ -55,7 +55,7 @@
     resize: none;
     overflow: auto;
     width: 97%;
-    font-family: 'EB Garamond', serif;
+    font-family: "EB Garamond", serif;
     @include calcRem(19);
     padding: 5px 5px 0;
     border: 1px solid rgba($theme-black, 0.4);
@@ -67,7 +67,7 @@
     &:-webkit-autofill:focus,
     &:-webkit-autofill:active {
       @include calcRem(19);
-      font-family: 'EB Garamond', serif;
+      font-family: "EB Garamond", serif;
       box-shadow: inset 0 0 0 30px $theme-white;
       -webkit-box-shadow: inset 0 0 0 30px $theme-white !important;
     }
@@ -90,7 +90,7 @@
       padding: 5px 10px;
       color: $theme-white;
       background: rgba($theme-black, 0.83);
-      font-family: 'EB Garamond', serif;
+      font-family: "EB Garamond", serif;
       @include calcRem(19);
       margin-top: 10px;
       transition: 200ms ease;
@@ -118,7 +118,7 @@
       span::after {
         opacity: 0;
         color: $theme-white;
-        content: '\00bb';
+        content: "\00bb";
         position: absolute;
         right: 8px;
         top: 3px;

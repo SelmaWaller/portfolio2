@@ -1,13 +1,13 @@
-import React from 'react';
-import ContentWave from '../components/page-title';
-import ProjectObjects from './../lib/project-objects';
-import ProjectCards from './../components/project-cards';
+import React from "react";
+import ContentWave from "../components/page-title";
+import ProjectObjects from "./../lib/project-objects";
+import ProjectCards from "./../components/project-cards";
 
 function Projects() {
   return (
     <>
       <ContentWave
-        header={'hi, there!'}
+        header={"hi, there!"}
         subheader={"i'm selma. welcome to my portfolio"}
       />
       <div className="content">

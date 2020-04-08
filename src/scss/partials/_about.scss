@@ -1,9 +1,9 @@
 .aboutMe {
-  max-width: 550px;
+  max-width: 600px;
 
   p {
     @include calcRem(19);
-    font-family: 'EB Garamond', serif;
+    font-family: "EB Garamond", serif;
 
     &:nth-child(1) {
       margin-top: -5px;
