@@ -1,10 +1,16 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 
-import ContentWave from './../components/page-title';
+import ContentWave from "./../components/page-title";
 
 const minMessageCount = 15;
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
   const [nameError, setNameError] = useState(true);
   const [emailError, setEmailError] = useState(true);
   const [subjectError, setSubjectError] = useState(true);
@@ -21,20 +27,27 @@ export default function Contact() {
     let messagePattern = /^(.{15,})$/;
 
     switch (name) {
-      case 'name':
+      case "name":
         namePattern.test(value) ? setNameError(false) : setNameError(true);
+        setName(value);
         break;
-      case 'email':
+      case "email":
         emailPattern.test(value) ? setEmailError(false) : setEmailError(true);
+        setEmail(value);
         break;
-      case 'subject':
+      case "phone":
+        setPhone(value);
+        break;
+      case "subject":
         subjectPattern.test(value)
           ? setSubjectError(false)
           : setSubjectError(true);
+        setSubject(value);
         break;
-      case 'message':
+      case "message":
         setCount(minMessageCount - value.length);
         setMessageError(!messagePattern.test(value));
+        setMessage(value);
         break;
       default:
         break;
@@ -44,20 +57,15 @@ export default function Contact() {
   let submitForm = event => {
     event.preventDefault();
     setShowResponse(true);
-    let subject = document.querySelector('#subject').value;
-    let contactName = document.querySelector('#name').value;
-    let contactEmail = document.querySelector('#email').value;
-    let contactPhone = document.querySelector('#phone').value;
-    let contactMessage = document.querySelector('#message').value;
-    let body = `Name: ${contactName}, Email: ${contactEmail}, Phone: ${contactPhone}, Message: ${contactMessage}`;
+    let body = `Name: ${name}, Email: ${email}, Phone: ${phone}, Message: ${message}`;
     window.open(`mailto:selmawaller@gmail.com?subject=${subject}&body=${body}`);
   };
 
   return (
     <>
       <ContentWave
-        header={'contact'}
-        subheader={'feel free to contact me at anytime'}
+        header={"contact"}
+        subheader={"feel free to contact me at anytime"}
       />
       <div className="content">
         <div className="title">
@@ -65,12 +73,12 @@ export default function Contact() {
         </div>
         <div className="contact">
           <form onSubmit={submitForm}>
-            <div className={showResponse ? 'disableForm' : ''}>
+            <div className={showResponse ? "disableForm" : ""}>
               <p>
                 <label htmlFor="name">
                   Name<span className="required">* </span>
-                  <span className={nameError ? 'error' : 'error__hide'}>
-                    {' '}
+                  <span className={nameError ? "error" : "error__hide"}>
+                    {" "}
                     Please enter your name
                   </span>
                 </label>
@@ -87,8 +95,8 @@ export default function Contact() {
               <p>
                 <label htmlFor="email">
                   Email<span className="required">* </span>
-                  <span className={emailError ? 'error' : 'error__hide'}>
-                    {' '}
+                  <span className={emailError ? "error" : "error__hide"}>
+                    {" "}
                     Please enter a valid email address
                   </span>
                 </label>
@@ -115,8 +123,8 @@ export default function Contact() {
               <p>
                 <label htmlFor="subject">
                   Subject<span className="required">* </span>
-                  <span className={subjectError ? 'error' : 'error__hide'}>
-                    {' '}
+                  <span className={subjectError ? "error" : "error__hide"}>
+                    {" "}
                     Subject can't be empty
                   </span>
                 </label>
@@ -132,8 +140,8 @@ export default function Contact() {
               <p>
                 <label htmlFor="message">
                   Message<span className="required">* </span>
-                  <span className={messageError ? 'error' : 'error__hide'}>
-                    {' '}
+                  <span className={messageError ? "error" : "error__hide"}>
+                    {" "}
                     Requires {count} more characters
                   </span>
                 </label>
@@ -152,13 +160,17 @@ export default function Contact() {
                 className="submitButton"
                 type="submit"
                 disabled={
-                  nameError || emailError || messageError || showResponse
+                  nameError ||
+                  emailError ||
+                  subjectError ||
+                  messageError ||
+                  showResponse
                 }
               >
                 <span>Send in email client</span>
               </button>
               <div
-                className={showResponse ? 'messageSent' : 'messageSent__hide'}
+                className={showResponse ? "messageSent" : "messageSent__hide"}
               >
                 <input
                   readOnly

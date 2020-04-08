@@ -6,17 +6,29 @@
   .pageTitle {
     margin-left: 90px;
     padding: 0 20px;
-    margin-bottom: 90px;
+    margin-bottom: 110px;
     transition: 200ms;
   }
 
   .wave-solid {
-    background-position-y: 220px;
+    background-position-y: 240px;
     transition: 200ms;
   }
   .wave-transparent {
-    background-position-y: 213px;
+    background-position-y: 233px;
     transition: 200ms;
+  }
+}
+
+@media only screen and(max-width: 800px) {
+  .projects {
+    display: block;
+    .projectDetails {
+      padding-left: 20px;
+      p:nth-child(5) {
+        margin-top: unset;
+      }
+    }
   }
 }
 
@@ -40,8 +52,8 @@
   }
 
   .pageTitle {
-    margin-left: 70px;
-    margin-bottom: 70px;
+    margin-left: 0;
+    margin-bottom: 100px;
     h1 {
       @include calcRem(45);
       transition: 200ms;
@@ -65,10 +77,14 @@
   }
 
   .wave-solid {
-    background-position-y: 170px;
+    background-position-y: 190px;
   }
   .wave-transparent {
-    background-position-y: 163px;
+    background-position-y: 183px;
+  }
+
+  .content {
+    padding-left: 20px;
   }
 }
 
@@ -90,7 +106,7 @@
 
   .pageTitle {
     margin-left: 0;
-    padding-left: 70px;
+    padding-left: 20px;
     margin-bottom: 65px;
     max-width: 200px;
     h1 {
