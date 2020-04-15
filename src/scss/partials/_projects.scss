@@ -23,14 +23,14 @@
     color: $theme-black;
 
     h3 {
-      font-family: 'EB Garmond', serif;
+      font-family: "EB Garmond", serif;
       font-weight: normal;
       @include calcRem(24);
       margin: 0 0 10px;
     }
 
     p {
-      font-family: 'EB Garmond', serif;
+      font-family: "EB Garmond", serif;
       font-weight: normal;
       margin: 10px 0;
       @include calcRem(18);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ProjectCards = ({
   netlify,
@@ -13,7 +13,7 @@ const ProjectCards = ({
   return (
     <>
       <div className="projects">
-        <a href={netlify}>
+        <a href={netlify} target="black" rel="noopener noreferrer">
           <img src={image} alt={name} title="Netlify preview" />
         </a>
         <div className="projectDetails">
@@ -24,7 +24,9 @@ const ProjectCards = ({
           <p>{description}</p>
           <div className="gitLink">
             <p>
-              <a href={gitrepo}>Link to repo</a>
+              <a href={gitrepo} target="black" rel="noopener noreferrer">
+                Link to repo
+              </a>
             </p>
             <div className="linkLine"></div>
           </div>
