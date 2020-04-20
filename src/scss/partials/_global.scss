@@ -34,6 +34,12 @@ body {
       font-family: "EB Garamond", serif;
       font-weight: normal;
     }
+
+    p {
+      @include calcRem(20);
+      font-family: "EB Garamond", serif;
+      margin-top: -30px;
+    }
   }
 }
 
