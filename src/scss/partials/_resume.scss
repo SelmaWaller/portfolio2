@@ -1,2 +1,114 @@
 .resume {
+  font-family: "EB Garamond", serif;
+
+  span {
+    font-weight: bold;
+  }
+
+  p {
+    @include calcRem(18);
+  }
+
+  a {
+    text-decoration: underline;
+    color: $theme-black;
+  }
+
+  @supports (display: grid) {
+    .cv-container {
+      max-width: 840px;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+  }
+
+  .section-line {
+    width: 100%;
+    max-width: 840px;
+    height: 1px;
+    background: #b9b9b9;
+    margin: 50px 0 30px 0;
+  }
+
+  .small-box,
+  .medium-box {
+    .title {
+      margin-top: 20px;
+    }
+    p {
+      margin: 2px 0;
+    }
+  }
+
+  .medium-box {
+    max-width: 370px;
+    width: 100%;
+
+    &:nth-child(2) {
+      margin: 0 20px;
+    }
+  }
+
+  .large-box {
+    width: 100%;
+    max-width: 540px;
+    position: relative;
+
+    p {
+      margin: 7px 0;
+    }
+
+    .description {
+      margin-top: 15px;
+    }
+
+    .location {
+      right: 0;
+      position: absolute;
+    }
+  }
+  .previous {
+    margin-top: 40px;
+  }
+
+  .openPDF {
+    margin-top: 50px;
+
+    .button {
+      padding: 5px 10px;
+      color: $theme-white;
+      background: rgba($theme-black, 0.83);
+      font-family: "EB Garamond", serif;
+      @include calcRem(19);
+      transition: 200ms ease;
+      cursor: pointer;
+      position: relative;
+      text-decoration: none;
+
+      span {
+        font-weight: normal;
+      }
+
+      &:hover {
+        transition: 200ms ease;
+        padding: 5px 25px 5px 10px;
+      }
+
+      span::after {
+        opacity: 0;
+        color: $theme-white;
+        content: "\00bb";
+        position: absolute;
+        right: 8px;
+        top: 3px;
+        transition: 200ms ease;
+      }
+
+      &:hover span::after {
+        opacity: 1;
+        transition: 200ms ease;
+      }
+    }
+  }
 }
