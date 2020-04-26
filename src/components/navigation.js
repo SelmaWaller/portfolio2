@@ -7,7 +7,9 @@ const Navigation = () => {
     <div className="navigation">
       <ul>
         <li>
-          <img src={logo} alt="logo" />
+          <NavLink to="/">
+            <img src={logo} alt="logo" />
+          </NavLink>
         </li>
         <li>
           <NavLink to="/">projects</NavLink>

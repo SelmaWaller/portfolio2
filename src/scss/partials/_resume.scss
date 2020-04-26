@@ -16,7 +16,7 @@
 
   @supports (display: grid) {
     .cv-container {
-      max-width: 840px;
+      max-width: 900px;
       margin: 0;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -25,7 +25,7 @@
 
   .section-line {
     width: 100%;
-    max-width: 840px;
+    max-width: 900px;
     height: 1px;
     background: #b9b9b9;
     margin: 50px 0 30px 0;
@@ -52,7 +52,7 @@
 
   .large-box {
     width: 100%;
-    max-width: 540px;
+    max-width: 550px;
     position: relative;
 
     p {

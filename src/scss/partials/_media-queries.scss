@@ -129,7 +129,8 @@
         min-width: unset;
       }
       h3 {
-        @include calcRem(20);
+        @include calcRem(18);
+        margin-top: 10px;
       }
 
       p,

@@ -28,7 +28,6 @@ const ProjectCards = ({
                 Link to repo
               </a>
             </p>
-            <div className="linkLine"></div>
           </div>
         </div>
       </div>
