@@ -51,4 +51,8 @@ body {
 .content {
   padding: 0 20px 0 40px;
   animation: intro-content 1s;
+
+  p {
+    line-height: 26px;
+  }
 }
