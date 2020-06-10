@@ -1,2 +1,3 @@
-Todo:</br>
-• add older projects/categories for project types(?)</br>
+TODO:</br>
+• add older projects/categories<br>
+• update CV
