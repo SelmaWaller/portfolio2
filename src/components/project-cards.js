@@ -14,7 +14,7 @@ const ProjectCards = ({
     <>
       <div className="projects">
         <a href={netlify} target="_blank" rel="noopener noreferrer">
-          <img src={image} alt={name} title="Netlify preview" />
+          <img src={image} alt={name} title="Preview" />
         </a>
         <div className="projectDetails">
           <h3>{name}</h3>

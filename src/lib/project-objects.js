@@ -1,40 +1,85 @@
-import mtg from './../images/projects/mtg.png';
-import rickandmorty from './../images/projects/rickandmorty.png';
-import adventuregame from './../images/projects/adventuregame.png';
+import holidaze from "./../images/projects/holidaze.png";
+import mtg from "./../images/projects/mtg.png";
+import adventuregame from "./../images/projects/adventuregame.png";
+import spacex from "./../images/projects/spacex.png";
+import candle from "./../images/projects/candle.png";
+import panda from "./../images/projects/panda.png";
+import unstudents from "./../images/projects/unstudents.png";
 
 const ProjectObjects = [
   {
-    netlify: 'https://upbeat-beaver-e142e8.netlify.com/',
+    netlify: null,
+    image: holidaze,
+    name: "Hotel Booking: Holidaze",
+    published: "05/06/2020",
+    tools: "React | SCSS | Illustrator | PHP",
+    type: "Final project exam",
+    description:
+      "This project is created with PHP and needs to be run on a local server to work. Best viewed on mobile.",
+    gitrepo: "https://github.com/SelmaWaller/project-exam-2",
+  },
+  {
+    netlify: "https://upbeat-beaver-e142e8.netlify.com/",
     image: mtg,
-    name: 'Magic: the Gathering',
-    published: '29/03/2020',
-    tools: 'React | Redux | SCSS',
-    type: 'Full week project',
+    name: "Magic: the Gathering",
+    published: "29/03/2020",
+    tools: "React | Redux | SCSS",
+    type: "Full week project",
     description:
-      'Final project for the React course created with Scryfall’s API',
-    gitrepo: 'https://github.com/SelmaWaller/selma-waller-js-frameworks-ca',
+      "Final project of the React course created with Scryfall’s API. The project won an award for best school project 2020.",
+    gitrepo: "https://github.com/SelmaWaller/selma-waller-js-frameworks-ca",
   },
   {
-    netlify: 'https://quirky-swirles-d29f01.netlify.com/',
-    image: rickandmorty,
-    name: 'Rick and Morty',
-    published: '22/03/2020',
-    tools: 'React | Redux | SCSS',
-    type: 'Weekend project',
-    description:
-      'First project after being introduced to React Hooks and Redux',
-    gitrepo: 'https://github.com/SelmaWaller/rick-and-morty',
-  },
-  {
-    netlify: 'https://vibrant-brown-215f63.netlify.com/',
+    netlify: "https://vibrant-brown-215f63.netlify.com/",
     image: adventuregame,
-    name: 'Multiple Choice Game',
-    published: '16/12/2019',
-    tools: 'JS | HTML | SCSS',
-    type: 'Hobby project',
+    name: "Multiple Choice Game",
+    published: "16/12/2019",
+    tools: "JS | HTML | CSS | SCSS",
+    type: "Hobby project",
     description:
-      'An adventure game/multiple choice story with illustrations made in pure CSS.',
-    gitrepo: 'https://github.com/SelmaWaller/adventure-game',
+      "An adventure game/multiple choice story with illustrations made in pure CSS.",
+    gitrepo: "https://github.com/SelmaWaller/adventure-game",
+  },
+  {
+    netlify: "https://affectionate-booth-60fd09.netlify.app/",
+    image: spacex,
+    name: "Spacex Microsite",
+    published: "05/06/2019",
+    tools: "JS | HTML5 | CSS",
+    type: "First project exam",
+    description:
+      "A microsite created primarily for young people to learn more about SpaceX",
+    gitrepo: "https://github.com/SelmaWaller/spacex-microsite",
+  },
+  {
+    netlify: "https://confident-edison-3f14f5.netlify.app/",
+    image: candle,
+    name: "Bruning Candle Drawing",
+    published: "07/10/2019",
+    tools: "HTML | CSS",
+    type: "Hobby project",
+    description: "A simple CSS drawing of a lit candle",
+    gitrepo: "https://github.com/SelmaWaller/living-candle-drawing",
+  },
+  {
+    netlify: "https://epic-kowalevski-bfd1ca.netlify.app/",
+    image: panda,
+    name: "Pure CSS Panda",
+    published: "22/12/2018",
+    tools: "HTML | CSS",
+    type: "Hobby project",
+    description: "My first attempt at a drawing made in HTML and CSS",
+    gitrepo: "https://github.com/SelmaWaller/panda-css-drawing",
+  },
+  {
+    netlify: "https://vibrant-brattain-48c3d9.netlify.app/",
+    image: unstudents,
+    name: "UN Students Oslo",
+    published: "14/12/2018",
+    tools: "HTML | CSS | Illustrator | Photoshop",
+    type: "First semester project",
+    description: "HTML5 and CSS website for UN Student Association Oslo",
+    gitrepo: "https://github.com/SelmaWaller/un-students-oslo",
   },
 ];
 
