@@ -1,6 +1,6 @@
 import React from "react";
 import ContentWave from "./../components/page-title";
-import cv from "./../lib/cv.pdf";
+import cv from "./../lib/cv_selma-waller.pdf";
 
 function Cv() {
   return (
