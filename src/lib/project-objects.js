@@ -3,6 +3,7 @@ import mtg from "./../images/projects/mtg.png";
 import adventuregame from "./../images/projects/adventuregame.png";
 import spacex from "./../images/projects/spacex.png";
 import candle from "./../images/projects/candle.png";
+import besseggen from "./../images/projects/besseggen.png";
 import panda from "./../images/projects/panda.png";
 import unstudents from "./../images/projects/unstudents.png";
 
@@ -62,13 +63,25 @@ const ProjectObjects = [
     gitrepo: "https://github.com/SelmaWaller/living-candle-drawing",
   },
   {
+    netlify:
+      "https://xd.adobe.com/view/d8b73802-6c6b-4506-7a59-fee5e031bc23-ae86/?fullscreen",
+    image: besseggen,
+    name: "Prototype",
+    published: "25/03/2019",
+    tools: "Adobe XD | Photoshop",
+    type: "Weekend project",
+    description:
+      "Final assignment of the interaction design course: A redesign of Besseggen Arkitekter's website.",
+    gitrepo: null,
+  },
+  {
     netlify: "https://epic-kowalevski-bfd1ca.netlify.app/",
     image: panda,
     name: "Pure CSS Panda",
     published: "22/12/2018",
     tools: "HTML | CSS",
     type: "Hobby project",
-    description: "My first attempt at a drawing made in HTML and CSS",
+    description: "My first attempt at a CSS drawing",
     gitrepo: "https://github.com/SelmaWaller/panda-css-drawing",
   },
   {
@@ -76,9 +89,10 @@ const ProjectObjects = [
     image: unstudents,
     name: "UN Students Oslo",
     published: "14/12/2018",
-    tools: "HTML | CSS | Illustrator | Photoshop",
+    tools: "HTML5 | CSS | Illustrator | Photoshop",
     type: "First semester project",
-    description: "HTML5 and CSS website for UN Student Association Oslo",
+    description:
+      "An HTML5 and CSS website for UN Student Association Oslo with illustrations made in Adobe Illustrator",
     gitrepo: "https://github.com/SelmaWaller/un-students-oslo",
   },
 ];
