@@ -1,14 +1,10 @@
 import React from "react";
 import ContentWave from "./../components/page-title";
-import cv from "./../lib/cv_selma-waller.pdf";
 
 function Cv() {
   return (
     <>
-      <ContentWave
-        header={"cv"}
-        subheader={"pdf available at the bottom of the page"}
-      />
+      <ContentWave header={"cv"} subheader={"pdf available upon request"} />
       <div className="content">
         <div className="title">
           <h2>Selma Waller</h2>
@@ -61,17 +57,15 @@ function Cv() {
               <p className="title">
                 <span>Highlighted skills</span>
               </p>
-              <p>
-                JavaScript - React - Redux - HTML5 - CSS - SASS - Git - Adobe
-                packages
-              </p>
+              <p>JavaScript - React - Redux - HTML5 - SASS - Adobe packages</p>
             </div>
             <div className="medium-box">
               <p className="title">
                 <span>Hobbies</span>
               </p>
               <p>
-                Frontend, gaming, documentaries, walks, brainteasers and puzzles
+                Frontend, CSS drawings/animations, gaming, documentaries,
+                brainteasers and puzzles
               </p>
             </div>
           </div>
@@ -81,8 +75,8 @@ function Cv() {
             <p>
               I see myself as an ambivert with a lot of humor, good energy and a
               never-ending thirst for knowledge. My goal right now is to find my
-              first job as a junior frontend developer (and hopefully work with
-              React), at a place with great people who have a lot to teach me.
+              first job as a frontend developer (and hopefully work with React),
+              at a place with great people who have a lot to teach me.
             </p>
           </div>
           <div className="section-line"></div>
@@ -97,8 +91,19 @@ function Cv() {
               A 2 year vocational school with a huge focus on design
               (interaction design, UI, UX, design methods, etc) and
               JavaScript/React. Some skills learned at the school includes
-              Redux, HTML5, CSS, SASS, NPM and Git, as well as thorough project
+              Redux, HTML5, SASS and webpack, as well as thorough project
               planning and team work.
+            </p>
+          </div>
+          <div className="large-box previous">
+            <p>
+              <span>Private school, Sonans</span>{" "}
+              <span className="location">Oslo, Norway</span>
+            </p>
+            <p>Sep 2016 — May 2018</p>
+            <p className="description">
+              I took up some subjects to get my general study competence to
+              later apply for the frontend-development study at Noroff
             </p>
           </div>
           <div className="section-line"></div>
@@ -110,10 +115,11 @@ function Cv() {
             </p>
             <p>Jul 2017 — Dec 2017</p>
             <p className="description">
-              I worked as a CS Specialist for the online betting company Mr.
-              Green (and later also their sister company Garbo) over live chat,
-              email and phone. Primarily I was working with customers in the EU,
-              but also with customers all over the world if needed.
+              I took a break from Sonans and worked as a CS Specialist for the
+              online betting company Mr. Green (and later also their sister
+              company Garbo) over live chat, email and phone. Primarily I was
+              working with customers in the EU, but also with customers all over
+              the world if needed.
             </p>
             <p>
               My role was to help customers with queries and issues, validate
@@ -133,26 +139,14 @@ function Cv() {
             <p className="description">
               I took calls and booked appointments, cleaned instruments, took
               x-rays, prepared chairs and needed tools etc between patients and
-              made sure the clinic was clean.
-            </p>
-            <p>
-              And of course a quick run to the coffee shop every now and then!
+              made sure the clinic was clean. And of course a quick run to the
+              coffee shop every now and then.
             </p>
           </div>
           <div className="section-line"></div>
           <div className="large-box">
             <h3 className="title">References</h3>
             <p>References available upon request</p>
-          </div>
-          <div className="openPDF">
-            <a
-              className="button"
-              href={cv}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>Open PDF</span>
-            </a>
           </div>
         </div>
       </div>
