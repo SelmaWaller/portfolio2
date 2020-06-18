@@ -16,19 +16,19 @@ function Cv() {
               <p className="title">
                 <span>Address</span>
               </p>
-              <p>Oslo, 0566, Norway</p>
+              <p>Oslo, Norway</p>
             </div>
             <div className="small-box">
               <p className="title">
                 <span>Phone</span>
               </p>
-              <p>+47 941 41 118</p>
+              <p>*** ** ***</p>
             </div>
             <div className="small-box">
               <p className="title">
                 <span>Date of birth</span>
               </p>
-              <p>Jan 9th, 1995</p>
+              <p>January, 1995</p>
             </div>
             <div className="small-box">
               <p className="title">
