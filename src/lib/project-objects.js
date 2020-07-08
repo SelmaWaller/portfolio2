@@ -1,12 +1,11 @@
-import yumiru from "./../images/projects/yumiru.png";
-import holidaze from "./../images/projects/holidaze.png";
-import mtg from "./../images/projects/mtg.png";
-import adventuregame from "./../images/projects/adventuregame.png";
-import spacex from "./../images/projects/spacex.png";
-import candle from "./../images/projects/candle.png";
-import besseggen from "./../images/projects/besseggen.png";
-import panda from "./../images/projects/panda.png";
-import unstudents from "./../images/projects/unstudents.png";
+import yumiru from "../images/projects/yumiru.png";
+import holidaze from "../images/projects/holidaze.png";
+import mtg from "../images/projects/mtg.png";
+import adventuregame from "../images/projects/adventuregame.png";
+import spacex from "../images/projects/spacex.png";
+import besseggen from "../images/projects/besseggen.png";
+import gameofzones from "../images/projects/gameofzones.png";
+import unstudents from "../images/projects/unstudents.png";
 
 const ProjectObjects = [
   {
@@ -31,7 +30,7 @@ const ProjectObjects = [
     gitrepo: "https://github.com/SelmaWaller/project-exam-2",
   },
   {
-    netlify: "https://upbeat-beaver-e142e8.netlify.com/",
+    netlify: "https://mtg-scryfall.netlify.app/",
     image: mtg,
     name: "Magic: the Gathering",
     created: "29/03/2020",
@@ -42,7 +41,7 @@ const ProjectObjects = [
     gitrepo: "https://github.com/SelmaWaller/selma-waller-js-frameworks-ca",
   },
   {
-    netlify: "https://vibrant-brown-215f63.netlify.com/",
+    netlify: "https://illustrated-adventure-game.netlify.app/",
     image: adventuregame,
     name: "Multiple Choice Game",
     created: "16/12/2019",
@@ -53,7 +52,18 @@ const ProjectObjects = [
     gitrepo: "https://github.com/SelmaWaller/adventure-game",
   },
   {
-    netlify: "https://affectionate-booth-60fd09.netlify.app/",
+    netlify: "https://game-of-zones.netlify.app/",
+    image: gameofzones,
+    name: "Game of Zones",
+    created: "11/12/2019",
+    tools: "JS | HTML5 | SCSS",
+    type: "Final semester project",
+    description:
+      "A Game of Thrones themed 2-player board game with character selection.",
+    gitrepo: "https://github.com/SelmaWaller/game-of-zones",
+  },
+  {
+    netlify: "https://spacex-microsite.netlify.app/",
     image: spacex,
     name: "Spacex Microsite",
     created: "05/06/2019",
@@ -62,16 +72,6 @@ const ProjectObjects = [
     description:
       "A microsite created primarily for young people to learn more about SpaceX",
     gitrepo: "https://github.com/SelmaWaller/spacex-microsite",
-  },
-  {
-    netlify: "https://confident-edison-3f14f5.netlify.app/",
-    image: candle,
-    name: "Bruning Candle Drawing",
-    created: "07/10/2019",
-    tools: "HTML | CSS",
-    type: "Hobby project",
-    description: "A simple CSS drawing of a lit candle",
-    gitrepo: "https://github.com/SelmaWaller/living-candle-drawing",
   },
   {
     netlify:
@@ -86,17 +86,7 @@ const ProjectObjects = [
     gitrepo: null,
   },
   {
-    netlify: "https://epic-kowalevski-bfd1ca.netlify.app/",
-    image: panda,
-    name: "Pure CSS Panda",
-    created: "22/12/2018",
-    tools: "HTML | CSS",
-    type: "Hobby project",
-    description: "My first attempt at a CSS drawing",
-    gitrepo: "https://github.com/SelmaWaller/panda-css-drawing",
-  },
-  {
-    netlify: "https://vibrant-brattain-48c3d9.netlify.app/",
+    netlify: "https://un-students.netlify.app/",
     image: unstudents,
     name: "UN Students Oslo",
     created: "14/12/2018",
