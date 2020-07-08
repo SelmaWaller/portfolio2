@@ -21,7 +21,7 @@ function Projects() {
               netlify={value.netlify}
               image={value.image}
               name={value.name}
-              published={value.published}
+              created={value.created}
               tools={value.tools}
               type={value.type}
               description={value.description}

@@ -1,3 +1,4 @@
+import yumiru from "./../images/projects/yumiru.png";
 import holidaze from "./../images/projects/holidaze.png";
 import mtg from "./../images/projects/mtg.png";
 import adventuregame from "./../images/projects/adventuregame.png";
@@ -9,10 +10,20 @@ import unstudents from "./../images/projects/unstudents.png";
 
 const ProjectObjects = [
   {
+    netlify: "https://yumiru.netlify.app/",
+    image: yumiru,
+    name: "An Introduction to Japanese",
+    created: "08/07/2020",
+    tools: "React | Illustrator | Photoshop",
+    type: "Hobby project",
+    description: `My goal with this app is to get a better understanding of Redux, and to learn a thing or two about ReasonML and styled components.`,
+    gitrepo: "https://github.com/SelmaWaller/yumiru",
+  },
+  {
     netlify: null,
     image: holidaze,
     name: "Hotel Booking: Holidaze",
-    published: "05/06/2020",
+    created: "05/06/2020",
     tools: "React | SCSS | Illustrator | PHP",
     type: "Final project exam",
     description:
@@ -23,7 +34,7 @@ const ProjectObjects = [
     netlify: "https://upbeat-beaver-e142e8.netlify.com/",
     image: mtg,
     name: "Magic: the Gathering",
-    published: "29/03/2020",
+    created: "29/03/2020",
     tools: "React | Redux | SCSS",
     type: "Full week project",
     description:
@@ -34,7 +45,7 @@ const ProjectObjects = [
     netlify: "https://vibrant-brown-215f63.netlify.com/",
     image: adventuregame,
     name: "Multiple Choice Game",
-    published: "16/12/2019",
+    created: "16/12/2019",
     tools: "JS | HTML | CSS | SCSS",
     type: "Hobby project",
     description:
@@ -45,7 +56,7 @@ const ProjectObjects = [
     netlify: "https://affectionate-booth-60fd09.netlify.app/",
     image: spacex,
     name: "Spacex Microsite",
-    published: "05/06/2019",
+    created: "05/06/2019",
     tools: "JS | HTML5 | CSS",
     type: "First project exam",
     description:
@@ -56,7 +67,7 @@ const ProjectObjects = [
     netlify: "https://confident-edison-3f14f5.netlify.app/",
     image: candle,
     name: "Bruning Candle Drawing",
-    published: "07/10/2019",
+    created: "07/10/2019",
     tools: "HTML | CSS",
     type: "Hobby project",
     description: "A simple CSS drawing of a lit candle",
@@ -67,7 +78,7 @@ const ProjectObjects = [
       "https://xd.adobe.com/view/d8b73802-6c6b-4506-7a59-fee5e031bc23-ae86/?fullscreen",
     image: besseggen,
     name: "Prototype",
-    published: "25/03/2019",
+    created: "25/03/2019",
     tools: "Adobe XD | Photoshop",
     type: "Weekend project",
     description:
@@ -78,7 +89,7 @@ const ProjectObjects = [
     netlify: "https://epic-kowalevski-bfd1ca.netlify.app/",
     image: panda,
     name: "Pure CSS Panda",
-    published: "22/12/2018",
+    created: "22/12/2018",
     tools: "HTML | CSS",
     type: "Hobby project",
     description: "My first attempt at a CSS drawing",
@@ -88,7 +99,7 @@ const ProjectObjects = [
     netlify: "https://vibrant-brattain-48c3d9.netlify.app/",
     image: unstudents,
     name: "UN Students Oslo",
-    published: "14/12/2018",
+    created: "14/12/2018",
     tools: "HTML5 | CSS | Illustrator | Photoshop",
     type: "First semester project",
     description:

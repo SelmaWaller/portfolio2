@@ -4,7 +4,7 @@ const ProjectCards = ({
   netlify,
   image,
   name,
-  published,
+  created,
   tools,
   type,
   description,
@@ -18,7 +18,7 @@ const ProjectCards = ({
         </a>
         <div className="projectDetails">
           <h3>{name}</h3>
-          <p>{published}</p>
+          <p>{created}</p>
           <p>{tools}</p>
           <p>{type}</p>
           <p>{description}</p>
