@@ -37,7 +37,7 @@ const ProjectObjects = [
     tools: "React | Redux | SCSS",
     type: "Full week project",
     description:
-      "Final project of the React course created with Scryfall’s API. The project won an award for best school project 2020.",
+      "Final project of the React course created with Scryfall’s API. The project won an award for best Frontend 2 project 2020.",
     gitrepo: "https://github.com/SelmaWaller/selma-waller-js-frameworks-ca",
   },
   {
