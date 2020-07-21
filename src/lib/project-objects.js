@@ -3,7 +3,6 @@ import holidaze from "../images/projects/holidaze.png";
 import mtg from "../images/projects/mtg.png";
 import adventuregame from "../images/projects/adventuregame.png";
 import spacex from "../images/projects/spacex.png";
-import besseggen from "../images/projects/besseggen.png";
 import gameofzones from "../images/projects/gameofzones.png";
 import unstudents from "../images/projects/unstudents.png";
 
@@ -72,18 +71,6 @@ const ProjectObjects = [
     description:
       "A microsite created primarily for young people to learn more about SpaceX",
     gitrepo: "https://github.com/SelmaWaller/spacex-microsite",
-  },
-  {
-    netlify:
-      "https://xd.adobe.com/view/d8b73802-6c6b-4506-7a59-fee5e031bc23-ae86/?fullscreen",
-    image: besseggen,
-    name: "Prototype",
-    created: "25/03/2019",
-    tools: "Adobe XD | Photoshop",
-    type: "Weekend project",
-    description:
-      "Final assignment of the interaction design course: A redesign of Besseggen Arkitekter's website.",
-    gitrepo: null,
   },
   {
     netlify: "https://un-students.netlify.app/",
