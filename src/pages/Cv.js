@@ -22,7 +22,7 @@ function Cv() {
               <p className="title">
                 <span>Phone</span>
               </p>
-              <p>*** ** ***</p>
+              <p>941 41 118</p>
             </div>
             <div className="small-box">
               <p className="title">
