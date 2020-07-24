@@ -1,12 +1,11 @@
-@media only screen and(max-width: 1000px) {
+@media only screen and(max-width: 1110px) {
   body {
     background-size: 150%;
   }
 
   .pageTitle {
-    margin-left: 40px;
+    margin: 100px 0 120px 20px;
     padding: 0 20px;
-    margin-bottom: 110px;
     transition: 200ms;
   }
 
@@ -20,42 +19,24 @@
   }
 }
 
-@media only screen and(max-width: 680px) {
-  .navigation {
-    transition: 200ms;
-    img {
-      max-width: 30px;
-      transition: 200ms;
-    }
-
-    ul {
-      li {
-        margin: 0 20px;
-        transition: 200ms;
-      }
-      a {
-        @include calcRem(20);
-      }
-    }
-  }
-
+@media only screen and(max-width: 830px) {
   .pageTitle {
-    margin-left: 20px;
-    margin-bottom: 100px;
     h1 {
-      @include calcRem(45);
-      transition: 200ms;
+      margin-top: 20px;
+      @include calcRem(40);
     }
-
     h2 {
-      max-width: 180px;
-      @include calcRem(18);
-      transition: 200ms;
+      @include calcRem(22);
     }
+    margin-top: 80px;
+    margin-left: 0;
   }
 
   .projects {
     display: block;
+    a img {
+      max-width: 100%;
+    }
     .projectDetails {
       padding-left: 0;
       p:nth-child(5) {
@@ -64,15 +45,14 @@
     }
   }
 
-  .wave-solid {
-    background-position-y: 190px;
-  }
-  .wave-transparent {
-    background-position-y: 183px;
-  }
-
   .content {
     padding-left: 20px;
+  }
+  .wave-solid {
+    background-position-y: 170px;
+  }
+  .wave-transparent {
+    background-position-y: 163px;
   }
 }
 
@@ -93,9 +73,8 @@
   }
 
   .pageTitle {
-    margin-left: 20px;
+    margin: 45px 0 65px 0;
     padding-left: 20px;
-    margin-bottom: 65px;
     max-width: 200px;
     h1 {
       @include calcRem(35);
