@@ -69,7 +69,7 @@ const ProjectObjects = [
     tools: "JS | HTML5 | CSS",
     type: "First project exam",
     description:
-      "A microsite created primarily for young people to learn more about SpaceX",
+      "A microsite created primarily for young people to learn more about SpaceX.",
     gitrepo: "https://github.com/SelmaWaller/spacex-microsite",
   },
   {
@@ -80,7 +80,7 @@ const ProjectObjects = [
     tools: "HTML5 | CSS | Illustrator | Photoshop",
     type: "First semester project",
     description:
-      "An HTML5 and CSS website for UN Student Association Oslo with illustrations made in Adobe Illustrator",
+      "An HTML5 and CSS website for UN Student Association Oslo with illustrations made in Adobe Illustrator.",
     gitrepo: "https://github.com/SelmaWaller/un-students-oslo",
   },
 ];

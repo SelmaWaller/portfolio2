@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import linkedin from './../images/linkedin.png';
-import email from './../images/email.svg';
-import github from './../images/git.png';
+import linkedin from "./../images/linkedin.png";
+import email from "./../images/email.svg";
+import github from "./../images/git.png";
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
       <a href="https://github.com/SelmaWaller" target="blank">
         <img src={github} alt="github" title="Github" />
       </a>
-      <p>© 2020 selma waller</p>
+      <p>2020 © selma waller</p>
     </div>
   );
 };

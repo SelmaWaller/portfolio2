@@ -5,14 +5,12 @@ import "./scss/styles.scss";
 
 import App from "./App";
 import Projects from "./pages/Projects";
-import Cv from "./pages/Cv";
 
 ReactDOM.render(
   <Router>
     <App>
       <Switch>
         <Route path="/" exact component={Projects}></Route>
-        <Route path="/cv" component={Cv}></Route>
       </Switch>
     </App>
   </Router>,
