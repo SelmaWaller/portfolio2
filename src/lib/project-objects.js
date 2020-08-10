@@ -12,9 +12,9 @@ const ProjectObjects = [
     image: yumiru,
     name: "An Introduction to Japanese",
     created: "08/07/2020",
-    tools: "React | Illustrator | Photoshop",
+    tools: "React | SCSS | Illustrator | Photoshop",
     type: "Hobby project",
-    description: `My goal with this app is to get a better understanding of Redux, and to learn a thing or two about ReasonML and styled components.`,
+    description: `A Japanese hobby app where I'll try to combine a bit of everything I've learned so far.`,
     gitrepo: "https://github.com/SelmaWaller/yumiru",
   },
   {
